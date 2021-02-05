@@ -25,15 +25,6 @@ resource "mongodbatlas_project_ip_whitelist" "test" {
 ```
 
 
-Change to the proper Subnet CIDR on GCP to Whitelist
-```
-resource "mongodbatlas_project_ip_whitelist" "test" {
-  project_id = "${mongodbatlas_project.aws_atlas.id}"
-  cidr_block = "10.138.0.0/20"
-  comment    = "ip block for GCP VPC - uswest1"
-}
-
-```
 
 
 Final Thoughts
